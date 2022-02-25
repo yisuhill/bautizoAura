@@ -60,9 +60,13 @@
 	}
 
 	.font45px{
-		font-size:45px !important;
+		font-size:40px !important;
 		text-align: center;
 		color: #e91e63 !important;
+	}
+	
+	.font20px{
+		font-size:20px !important;
 	}
 
 	.textCenter{
@@ -96,23 +100,33 @@
 background-color: #ECE9E9 !important;
 }
 
+.btn {
+opacity: 1 !important;
+}
 
+.countdown{
+	font-size:25px !important;
+		text-align: center;
+		color: #e91e63 !important;
+}
 
 	</style>
 
 </head>
 <body>
 
-	<div class="row">
+	<div class="row textCenter">
 		<div class="col s12 m12 l12 xl12">
-			<div class="card white lighten-4 myOpacity">
-				<div class="card-content black-text myOpacity">
-					<span class="card-title font45px">Aura Gil Gil</span>
-					<p class="textCenter">Os invita a su batizo</p>
-				</div>
-			</div>
+				<div class="font45px textCenter">Aura Gil Gil</div>
+				<p class="font20px textCenter">Os invita a su batizo</p>
+				<p class="countdown" id="countdown">Falta...</p>
 		</div>
 	</div>
+
+
+
+	
+
 
 
 	<ul class="collapsible">
@@ -221,6 +235,8 @@ background-color: #ECE9E9 !important;
 			<div class="collapsible-header myHeader"><i class="fa-solid fa-square-parking"></i>Aparcamientos</div>
 				<div class="collapsible-body">
 					<div class="row">
+					
+					
 						<div class="col s12 m12 l12 xl12">
 						  <div class="card lighten-4">
 							<div class="card-content black-text">
@@ -240,6 +256,8 @@ background-color: #ECE9E9 !important;
 							</div>
 						  </div>
 						</div>
+						
+						
 						<div class="col s12 m12 l12 xl12">
 						  <div class="card lighten-4">
 							<div class="card-content black-text">
@@ -255,6 +273,26 @@ background-color: #ECE9E9 !important;
 							</div>
 							<div class="card-action pink">
 							  <a class = "btn white black-text" target="_blank" href="https://www.google.com/maps/dir//Aparcamiento+P%C3%BAblico+C%C3%B3rdoba,+C.+de+los+Plateros,+315B,+14006+C%C3%B3rdoba/@37.893638,-4.780435,3529m/data=!3m1!1e3!4m9!4m8!1m0!1m5!1m1!1s0xd6cdf71ccd12d7b:0x165ea72ed62bad72!2m2!1d-4.7786849!2d37.8949816!3e0?hl=es"><i class="fa-solid fa-location-dot"></i>Cómo llegar</a>
+							</div>
+						  </div>
+						</div>
+						
+						
+						<div class="col s12 m12 l12 xl12">
+						  <div class="card lighten-4">
+							<div class="card-content black-text">
+							  <span class="card-title">Aparcamientos Avenida Libertad (VIAL)</span>
+								<p class="separation">Aparcamiento subterráneo vigilado</p>
+								<p><i class="fa-regular fa-clock"></i></i>15 minutos a la iglesia (1km)<p>
+								<p><i class="fa-regular fa-clock"></i>15 minutos a pie al lugar de la celebración (1km)<p>
+								<p><i class="fa-solid fa-euro-sign"></i>De pago</p>
+								<p><i class="fa-solid fa-stopwatch"></i>Sin limite de tiempo</p>
+								<div class="container">
+									<iframe class="responsive-iframe" src="<iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d3848.0807340158144!2d-4.782097672657906!3d37.888377978076136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e2!4m0!4m5!1s0xd6cdf6f7f4c08b3%3A0xf678d3e5421bd599!2sAparcamientos%20Avenida%20Libertad%2C%20Av.%20de%20la%20Libertad%2C%201%2C%2014006%20C%C3%B3rdoba!3m2!1d37.8917381!2d-4.7835323999999995!5e1!3m2!1ses!2ses!4v1645829590670!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+								</div>
+							</div>
+							<div class="card-action pink">
+							  <a class = "btn white black-text" target="_blank" href="https://www.google.com/maps/dir//Aparcamientos+Avenida+Libertad,+Av.+de+la+Libertad,+1,+14006+C%C3%B3rdoba/@37.888378,-4.7820977,884m/data=!3m1!1e3!4m17!1m7!3m6!1s0xd6cdf6f7f4c08b3:0xf678d3e5421bd599!2sAparcamientos+Avenida+Libertad!8m2!3d37.8917381!4d-4.7835324!15sChphcGFyY2FtaWVudG9zIHZpYWwgY29yZG9iYVocIhphcGFyY2FtaWVudG9zIHZpYWwgY29yZG9iYZIBDnBhcmtpbmdfZ2FyYWdlmgEkQ2hkRFNVaE5NRzluUzBWSlEwRm5TVU5OZFMxRGNIVjNSUkFC!4m8!1m0!1m5!1m1!1s0xd6cdf6f7f4c08b3:0xf678d3e5421bd599!2m2!1d-4.7835324!2d37.8917381!3e2"><i class="fa-solid fa-location-dot"></i>Cómo llegar</a>
 							</div>
 						  </div>
 						</div>
@@ -286,6 +324,30 @@ background-color: #ECE9E9 !important;
 		</li>
 		
 		
+		<!----------------------------------------------------------------------------------------------------------------------->
+		<!-- POI -->
+		<li>
+			<div class="collapsible-header myHeader"><i class="material-icons">restaurant</i>Puntos de interés</div>
+				<div class="collapsible-body">
+					<div class="row">
+						<div class="col s12 m12 l12 xl12">
+						  <div class="card lighten-4">
+							<div class="card-content black-text">
+							  <span class="card-title">Puntos de interés</span>
+								<p class="separation">Algunos puntos de interés</p>
+								<div class="container">
+									<iframe class="responsive-iframe" src="<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1K5LXvn2fsM11L6hrHUxzmwMfdEoRcz0f&ehbc=2E312F" width="640" height="480"></iframe>" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+								</div>
+							</div>
+							<div class="card-action pink">
+							  <a class = "btn white black-text"" target="_blank" href="https://www.google.com/maps/d/u/0/edit?mid=1K5LXvn2fsM11L6hrHUxzmwMfdEoRcz0f&usp=sharing"><i class="fa-solid fa-location-dot"></i>Abrir en Maps</a>
+							</div>
+						  </div>
+						</div>
+					</div>
+				</div>
+		</li>
+		
 		
 		<!----------------------------------------------------------------------------------------------------------------------->
 		<!-- FOTOS -->
@@ -313,14 +375,48 @@ background-color: #ECE9E9 !important;
   
 
 	
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
 	<script>
 		$(document).ready(function(){
 			$('.collapsible').collapsible();
 			$('.materialboxed').materialbox();
-		});
+			
+			var countDownDate = new Date("Mar 26, 2022 11:00:00").getTime();
+
+	// Update the count down every 1 second
+	var x = setInterval(function() {
+
+	  // Get today's date and time
+	  var now = new Date().getTime();
+		
+	  // Find the distance between now and the count down date
+	  var distance = countDownDate - now;
+		
+	  // Time calculations for days, hours, minutes and seconds
+	  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+	  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+	  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+	  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+		
+	  // Output the result in an element with id="countdown"
+	  document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
+	  + minutes + "m " + seconds + "s ";
+		
+	  // If the count down is over, write some text 
+	  if (distance < 0) {
+		clearInterval(x);
+		document.getElementById("countdown").innerHTML = "EXPIRED";
+	  }
+	}, 1000);
+			
+        });
 	</script>
+		<script>
+	// Set the date we're counting down to
+	
+	</script>
+
 </body>
 </html>
