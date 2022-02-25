@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Hachi+Maru+Pop">
-
-      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
@@ -17,64 +15,299 @@
 
 	p {
 		font-family: "Hachi Maru Pop", sans-serif;
+		font-weight: bold !important;
+		color: black !important;
+	}
+	
+	.btn {
+		border-radius: 50px !important;
 	}
 	
 	.collapsible-header{
 		border-radius: 50px !important;
-		background-color: #f8bbd0 !important;
 		opacity: 0.6 !important;
 		font-family: "Hachi Maru Pop", sans-serif;
 		font-weight: bold;
+		color: black;
 	}
 
-.active .collapsible-header {
-	opacity: 1 !important;
+	.active .collapsible-header {
+		opacity: 1 !important;
+		color: #e91e63 !important
+	}
+
+	.container {
+	  position: relative;
+	  overflow: hidden;
+	  width: 100%;
+	  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+	}
+
+	/* Then style the iframe to fit in the container div with full height and width */
+	.responsive-iframe {
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  bottom: 0;
+	  right: 0;
+	  width: 100%;
+	  height: 100%;
+	}
+
+	.myOpacity{
+		opacity: 0.8 !important;
+	}
+
+	.font45px{
+		font-size:45px !important;
+		text-align: center;
+		color: #e91e63 !important;
+	}
+
+	.textCenter{
+		text-align: center;
+	}
+
+	.separation{
+		    margin-bottom: 20px !important;
+	}
+
+	.card-content{
+		background-color: #9DFCE2 !important;
+		font-family: "Hachi Maru Pop", sans-serif;
+		font-weight: bold !important;
+		color: black !important;
+	}
+
+	.card{
+		opacity: 0.8 !important;
+		font-family: "Hachi Maru Pop", sans-serif;
+		font-weight: bold !important;
+		color: black !important;
+	}
+
+.card-title{
+		font-weight: bold !important;
+		color: black;
+	}
+
+.card-action{
+background-color: #ECE9E9 !important;
 }
+
+
+
 	</style>
 
 </head>
 <body>
 
+	<div class="row">
+		<div class="col s12 m12 l12 xl12">
+			<div class="card white lighten-4 myOpacity">
+				<div class="card-content black-text myOpacity">
+					<span class="card-title font45px">Aura Gil Gil</span>
+					<p class="textCenter">Os invita a su batizo</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
 	<ul class="collapsible">
+	
+		<!----------------------------------------------------------------------------------------------------------------------->
+		<!-- INVITACIÓN -->
 		<li>
-			<div class="collapsible-header myHeader"><i class="fas fa-church"></i>Ceremonia</div>
-			<div class="collapsible-body">
-			
+			<div class="collapsible-header myHeader"><i class="fa-solid fa-envelope"></i>Invitación</div>
+				<div class="collapsible-body">
 					<div class="row">
-						<div class="col s12 m6 l4 xl4">
-						  <div class="card pink lighten-4">
+						<div class="col s12 m12 l12 xl12">
+						  <div class="card lighten-4">
 							<div class="card-content black-text">
 							  <span class="card-title">Ceremonia</span>
-							  <p>La ceremonia tendrá lugar en la iglesia Santa Marina de Aguas Santas, Córdoba a las 11:00 h</p>
+								<p>La ceremonia tendrá lugar en la iglesia Santa Marina de Aguas Santas, Córdoba a las 11:00 h</p>
+								<p><i class="fa-solid fa-calendar-days"></i>Sábado 26 de Marzo 2022</p>
+								<p><i class="fas fa-church"></i>Santa Marina, Córdoba</p>
+								<p><i class="fa-solid fa-clock"></i>11:00h</p>
+								<div class="container">
+									<iframe class="responsive-iframe" src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d1930.849517471036!2d-4.776313857600016!3d37.88945485333066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e0!4m0!4m5!1s0xd6cdf7bcd2c42fd%3A0x1deae08fb173ef25!2sReal%20Iglesia%20de%20Santa%20Marina%20de%20Aguas%20Santas%2C%20Pl.%20de%20Sta.%20Marina%2C%206%2C%2014001%20C%C3%B3rdoba!3m2!1d37.8899304!2d-4.7747017!5e1!3m2!1ses!2ses!4v1645729901795!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+								</div>
 							</div>
 							<div class="card-action pink">
-							  <a class = "white-text" target="_blank" href="https://www.google.com/maps?ll=37.889455,-4.776314&z=17&t=h&hl=es&gl=ES&mapclient=embed&saddr&daddr=Real+Iglesia+de+Santa+Marina+de+Aguas+Santas,+Pl.+de+Sta.+Marina,+6,+14001+C%C3%B3rdoba&dirflg=d">Cómo llegar</a>
+							  <a class = "btn white black-text"" target="_blank" href="https://www.google.com/maps?ll=37.889455,-4.776314&z=17&t=h&hl=es&gl=ES&mapclient=embed&saddr&daddr=Real+Iglesia+de+Santa+Marina+de+Aguas+Santas,+Pl.+de+Sta.+Marina,+6,+14001+C%C3%B3rdoba&dirflg=d"><i class="fa-solid fa-location-dot"></i>Cómo llegar</a>
 							</div>
 						  </div>
 						</div>
 					</div>
-				<iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d1930.849517471036!2d-4.776313857600016!3d37.88945485333066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e0!4m0!4m5!1s0xd6cdf7bcd2c42fd%3A0x1deae08fb173ef25!2sReal%20Iglesia%20de%20Santa%20Marina%20de%20Aguas%20Santas%2C%20Pl.%20de%20Sta.%20Marina%2C%206%2C%2014001%20C%C3%B3rdoba!3m2!1d37.8899304!2d-4.7747017!5e1!3m2!1ses!2ses!4v1645729901795!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>	
-			</div>
+				</div>
 		</li>
+
+
+		<!----------------------------------------------------------------------------------------------------------------------->
+		<!-- CEREMONIA -->
 		<li>
-			<div class="collapsible-header"><i class="material-icons">restaurant</i>Celebración</div>
+			<div class="collapsible-header myHeader"><i class="fas fa-church"></i>Ceremonia</div>
+				<div class="collapsible-body">
+					<div class="row">
+						<div class="col s12 m12 l12 xl12">
+						  <div class="card lighten-4">
+							<div class="card-content black-text">
+							  <span class="card-title">Ceremonia</span>
+								<p class="separation">La ceremonia tendrá lugar en la iglesia Santa Marina de Aguas Santas, Córdoba a las 11:00 h</p>
+								<p><i class="fa-solid fa-calendar-days"></i>Sábado 26 de Marzo 2022</p>
+								<p><i class="fas fa-church"></i>Santa Marina, Córdoba</p>
+								<p><i class="fa-solid fa-clock"></i>11:00h</p>
+								<div class="container">
+									<iframe class="responsive-iframe" src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d1930.849517471036!2d-4.776313857600016!3d37.88945485333066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e0!4m0!4m5!1s0xd6cdf7bcd2c42fd%3A0x1deae08fb173ef25!2sReal%20Iglesia%20de%20Santa%20Marina%20de%20Aguas%20Santas%2C%20Pl.%20de%20Sta.%20Marina%2C%206%2C%2014001%20C%C3%B3rdoba!3m2!1d37.8899304!2d-4.7747017!5e1!3m2!1ses!2ses!4v1645729901795!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+								</div>
+							</div>
+							<div class="card-action pink">
+							  <a class = "btn white black-text"" target="_blank" href="https://www.google.com/maps?ll=37.889455,-4.776314&z=17&t=h&hl=es&gl=ES&mapclient=embed&saddr&daddr=Real+Iglesia+de+Santa+Marina+de+Aguas+Santas,+Pl.+de+Sta.+Marina,+6,+14001+C%C3%B3rdoba&dirflg=d"><i class="fa-solid fa-location-dot"></i>Cómo llegar</a>
+							</div>
+						  </div>
+						</div>
+					</div>
+				</div>
+		</li>
+
+
+		<!----------------------------------------------------------------------------------------------------------------------->
+		<!-- CELEBRACIÓN -->
+		<li>
+			<div class="collapsible-header myHeader"><i class="material-icons">restaurant</i>Celebración</div>
+				<div class="collapsible-body">
+					<div class="row">
+						<div class="col s12 m12 l12 xl12">
+						  <div class="card lighten-4">
+							<div class="card-content black-text">
+							  <span class="card-title">Celebración</span>
+								<p class="separation">La celebración tendrá lugar en el Hotel Hospes Palacio del Bailío a las 14:00 h</p>
+
+								<p>Si el tiempo lo permite, será en exterior en su patio de entrada.</p>
+								<p class="separation">En caso de mal tiempo, será en el salón Mudéjar donde celebramos la boda.</p>
+
+								<p><i class="fa-solid fa-calendar-days"></i>Sábado 26 de Marzo 2022</p>
+								<p><i class="material-icons">restaurant</i>Hotel Hospes Palacio del Bailío</p>
+								<p><i class="fa-solid fa-clock"></i>14:00h</p>
+
+								<div class="container">
+									<iframe class="responsive-iframe" src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d1613.4379273049428!2d-4.778421115314036!3d37.887369941681314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e0!4m0!4m5!1s0xd6cdf7b7db07151%3A0x94ded01fd282afc0!2sHotel%20Hospes%20Palacio%20del%20Bail%C3%ADo%2C%20C.%20Ram%C3%ADrez%20de%20las%20Casas%20Deza%2C%2010%2C%2012%2C%2014001%20C%C3%B3rdoba!3m2!1d37.887409!2d-4.777305999999999!5e1!3m2!1ses!2ses!4v1645729986102!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+								</div>
+							</div>
+							<div class="card-action pink">
+							  <a class = "btn white black-text"" target="_blank" href="https://www.google.com/maps?ll=37.889455,-4.776314&z=17&t=h&hl=es&gl=ES&mapclient=embed&saddr&daddr=Real+Iglesia+de+Santa+Marina+de+Aguas+Santas,+Pl.+de+Sta.+Marina,+6,+14001+C%C3%B3rdoba&dirflg=d"><i class="fa-solid fa-location-dot"></i>Cómo llegar</a>
+							</div>
+							  <div>
+								<div class="white black-text">Exterior: Patio</div>
+								<img class="materialboxed responsive-img" src="bailio1.jpg">
+								<img class="materialboxed responsive-img" src="bailio2.jpg">
+								<img class="materialboxed responsive-img" src="bailio5.jpg">
+								<div class="white black-text">Interior: Sala Mudéjar</div>
+								<img class="materialboxed responsive-img" src="bailio3.jpg">
+								<img class="materialboxed responsive-img" src="bailio0.jpg">
+							  </div>
+						  </div>
+						</div>
+					</div>
+				</div>
+		</li>
+
+
+		<!----------------------------------------------------------------------------------------------------------------------->
+		<!-- APARCAMIENTOS -->
+		<li>
+			<div class="collapsible-header myHeader"><i class="fa-solid fa-square-parking"></i>Aparcamientos</div>
+				<div class="collapsible-body">
+					<div class="row">
+						<div class="col s12 m12 l12 xl12">
+						  <div class="card lighten-4">
+							<div class="card-content black-text">
+							  <span class="card-title">Colón</span>
+								<p class="separation">Los jardines de Colón tienen en todo su alrededor plazas de aparcamiento al aire libre de zona azul</p>
+								<p class="separation">Estos aparcamientos son de pago hasta las 14:00h</p>
+								<p><i class="fa-regular fa-clock"></i></i>4 minutos a la iglesia (300m)<p>
+								<p><i class="fa-regular fa-clock"></i>5 minutos a pie al lugar de la celebración (450m)<p>
+								<p><i class="fa-solid fa-euro-sign"></i>De pago hasta las 14:00h</p>
+								<p><i class="fa-solid fa-stopwatch"></i>Límite de 2h sin cambiar ticket</p>
+								<div class="container">
+									<iframe class="responsive-iframe" src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d3225.6321901580604!2d-4.780045091461743!3d37.88994591665915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e0!4m0!4m5!1s0xd6cdf7ae89ecd7f%3A0x4d5d6baa162f56fd!2sPl.%20de%20Col%C3%B3n%2C%2014001%20C%C3%B3rdoba!3m2!1d37.890295699999996!2d-4.7776323!5e1!3m2!1ses!2ses!4v1645730103305!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+								</div>
+							</div>
+							<div class="card-action pink">
+							  <a class = "btn white black-text"" target="_blank" href="https://www.google.com/maps?ll=37.889946,-4.780045&z=15&t=h&hl=es&gl=ES&mapclient=embed&saddr&daddr=Pl.+de+Col%C3%B3n,+14001+C%C3%B3rdoba&dirflg=d"><i class="fa-solid fa-location-dot"></i>Cómo llegar</a>
+							</div>
+						  </div>
+						</div>
+						<div class="col s12 m12 l12 xl12">
+						  <div class="card lighten-4">
+							<div class="card-content black-text">
+							  <span class="card-title">Valdeolleros</span>
+								<p class="separation">Solar grande habilitado como aparcamientos públicos y gratuitos</p>
+								<p><i class="fa-regular fa-clock"></i></i>15 minutos a la iglesia (1km)<p>
+								<p><i class="fa-regular fa-clock"></i>15 minutos a pie al lugar de la celebración (1km)<p>
+								<p><i class="fa-solid fa-euro-sign"></i>Gratis</p>
+								<p><i class="fa-solid fa-stopwatch"></i>Sin limite de tiempo</p>
+								<div class="container">
+									<iframe class="responsive-iframe" src="https://www.google.com/maps/embed?pb=!1m22!1m12!1m3!1d3226.2812073424307!2d-4.78043512614044!3d37.89363816485731!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m7!3e0!4m0!4m4!1s0xd6cdf71ccd12d7b%3A0x165ea72ed62bad72!3m2!1d37.8949816!2d-4.7786849!5e1!3m2!1ses!2ses!4v1645730159595!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+								</div>
+							</div>
+							<div class="card-action pink">
+							  <a class = "btn white black-text" target="_blank" href="https://www.google.com/maps/dir//Aparcamiento+P%C3%BAblico+C%C3%B3rdoba,+C.+de+los+Plateros,+315B,+14006+C%C3%B3rdoba/@37.893638,-4.780435,3529m/data=!3m1!1e3!4m9!4m8!1m0!1m5!1m1!1s0xd6cdf71ccd12d7b:0x165ea72ed62bad72!2m2!1d-4.7786849!2d37.8949816!3e0?hl=es"><i class="fa-solid fa-location-dot"></i>Cómo llegar</a>
+							</div>
+						  </div>
+						</div>
+					</div>
+				</div>
+		</li>
+
+
+
+		<!----------------------------------------------------------------------------------------------------------------------->
+		<!-- ASISTENCIA -->
+		<li>
+			<div class="collapsible-header myHeader"><i class="fa-solid fa-circle-check"></i>Confirmación de asistencia</div>
 			<div class="collapsible-body">
-				<iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d1613.4379273049428!2d-4.778421115314036!3d37.887369941681314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e0!4m0!4m5!1s0xd6cdf7b7db07151%3A0x94ded01fd282afc0!2sHotel%20Hospes%20Palacio%20del%20Bail%C3%ADo%2C%20C.%20Ram%C3%ADrez%20de%20las%20Casas%20Deza%2C%2010%2C%2012%2C%2014001%20C%C3%B3rdoba!3m2!1d37.887409!2d-4.777305999999999!5e1!3m2!1ses!2ses!4v1645729986102!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+					<div class="row">
+						<div class="col s12 m12 l12 xl12">
+						  <div class="card lighten-4">
+							<div class="card-content black-text">
+							  <span class="card-title">Confirmación de asistencia</span>
+								<p>Por favor, confirma asistencia antes del 10 de Marzo 2022</p>
+							</div>
+							<div class="card-action pink">
+							  <a class="btn green white-text" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSdGXfEyDL4T2PBJ2ayZyp9ZvlYv8Wo4EEEPln_OjmAdMNxlxw/viewform?embedded=true"><i class="fa-solid fa-circle-check"></i>Confirmar</a>
+							</div>
+						  </div>
+						</div>
+					</div>
 			</div>
 		</li>
+		
+		
+		
+		<!----------------------------------------------------------------------------------------------------------------------->
+		<!-- FOTOS -->
 		<li>
-			<div class="collapsible-header"><i class="material-icons">restaurant</i>Menú</div>
+			<div class="collapsible-header myHeader"><i class="fa-solid fa-camera"></i>Fotos</div>
 			<div class="collapsible-body">
-				<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdGXfEyDL4T2PBJ2ayZyp9ZvlYv8Wo4EEEPln_OjmAdMNxlxw/viewform?embedded=true" width="640" height="704" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+					<div class="row">
+						<div class="col s12 m12 l12 xl12">
+						  <div class="card lighten-4">
+							<div class="card-content black-text">
+							  <span class="card-title">Álbum de fotos</span>
+								<p>Aquí podrás encontrar fotos cuando estén disponibles</p>
+							</div>
+							<div class="card-action pink">
+							  <a class="btn disabled" target="_blank" href=""><i class="fa-solid fa-camera"></i>Fotos<a>
+							</div>
+						  </div>
+						</div>
+					</div>
 			</div>
 		</li>
-		<li>
-		  <div class="collapsible-header"><i class="material-icons">local_taxi</i>Aparcamientos</div>
-		  <div class="collapsible-body">
-				<iframe src="https://www.google.com/maps/embed?pb=!1m22!1m12!1m3!1d3226.2812073424307!2d-4.78043512614044!3d37.89363816485731!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m7!3e0!4m0!4m4!1s0xd6cdf71ccd12d7b%3A0x165ea72ed62bad72!3m2!1d37.8949816!2d-4.7786849!5e1!3m2!1ses!2ses!4v1645730159595!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-				<iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d3225.6321901580604!2d-4.780045091461743!3d37.88994591665915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e0!4m0!4m5!1s0xd6cdf7ae89ecd7f%3A0x4d5d6baa162f56fd!2sPl.%20de%20Col%C3%B3n%2C%2014001%20C%C3%B3rdoba!3m2!1d37.890295699999996!2d-4.7776323!5e1!3m2!1ses!2ses!4v1645730103305!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-			</div>
-		</li>
+
+
 	</ul>
   
 
@@ -85,6 +318,7 @@
 	<script>
 		$(document).ready(function(){
 			$('.collapsible').collapsible();
+			$('.materialboxed').materialbox();
 		});
 	</script>
 </body>
